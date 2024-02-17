@@ -1,13 +1,17 @@
 import { ModeToggle } from './ModeToggle';
+import UserDisplay from './UserDisplay';
 
 const NavBar = () => (
-	<div className="bg-slate-600 text-white text-4xl -bold font-bold flex justify-between p-2">
+	<div className="bg-card text-card-foreground text-4xl -bold font-bold flex justify-between p-2">
 		<span>
 			<span>STEP</span>
-			<span className="text-green-400">xchg</span>
+			<span className="text-primary">xchg</span>
 		</span>
 
-		<ModeToggle />
+		<div className="flex gap-2">
+			<ModeToggle />
+			<UserDisplay />
+		</div>
 	</div>
 );
 

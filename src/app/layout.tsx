@@ -4,6 +4,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import NavBar from '@/components/NavBar';
 import { ThemeProvider } from '@/components/theme-provider';
+import SideNav from '@/components/SideNav';
 
 export const fontSans = FontSans({
 	subsets: ['latin'],
@@ -35,7 +36,12 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<NavBar />
-					{children}
+					<div className="flex min-h-screen">
+						<div className=" bg-card w-1/6">
+							<SideNav />
+						</div>
+						<div className="bg-background grow">{children}</div>
+					</div>
 				</ThemeProvider>
 			</body>
 		</html>
