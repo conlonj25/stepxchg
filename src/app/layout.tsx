@@ -37,7 +37,7 @@ export default function RootLayout({
 				>
 					<NavBar />
 					<div className="flex min-h-screen">
-						<div className=" bg-card w-1/6">
+						<div className=" bg-card min-w-64">
 							<SideNav />
 						</div>
 						<div className="bg-background grow">{children}</div>

@@ -10,9 +10,6 @@ const SideNav = () => (
 		>
 			Questions
 		</Link>
-		<Link className={'bg-primary p-2 text-lg rounded-md'} href={'/'}>
-			Tags
-		</Link>
 	</div>
 );
 

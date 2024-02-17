@@ -1,9 +1,9 @@
-import QuestionPreview from '@/components/QuestionPreview';
+import QuestionList from './QuestionList';
 
 const Page = () => {
 	return (
-		<div className="grow h-full">
-			<QuestionPreview />
+		<div className="grow h-full p-5">
+			<QuestionList />
 		</div>
 	);
 };

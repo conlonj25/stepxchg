@@ -2,7 +2,7 @@ import { Badge } from '@/components/ui/badge';
 
 const QuestionPreview = () => {
 	return (
-		<div>
+		<div className="flex flex-col gap-2 outline rounded-md p-3">
 			<h1 className="text-xl text-primary">Question Title</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
