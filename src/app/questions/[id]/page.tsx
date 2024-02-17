@@ -1,12 +1,18 @@
+import Pencil from '@/components/icons/Pencil';
+import Trash from '@/components/icons/trash';
 import { Badge } from '@/components/ui/badge';
-import Link from 'next/link';
 
-const QuestionPreview = () => {
+const page = ({ params }: { params: { id: string } }) => {
 	return (
-		<div className="flex flex-col gap-2 outline rounded-md p-3">
-			<Link href="questions/1">
-				<h1 className="text-xl text-primary">Question Title</h1>
-			</Link>
+		<div className="flex flex-col gap-2 p-3">
+			<span className="flex justify-between">
+				<span className="text-xl text-primary">Question Title</span>
+				<span className="flex gap-2 text-xl text-primary">
+					<Trash />
+					<Pencil />
+				</span>
+			</span>
+
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				Maecenas lacinia lectus eu arcu fringilla vestibulum. Sed eu
@@ -27,4 +33,4 @@ const QuestionPreview = () => {
 	);
 };
 
-export default QuestionPreview;
+export default page;
