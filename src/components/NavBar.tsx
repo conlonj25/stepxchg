@@ -1,3 +1,5 @@
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+
 import { ModeToggle } from './ModeToggle';
 import UserDisplay from './UserDisplay';
 
@@ -11,6 +13,10 @@ const NavBar = () => (
 		<div className="flex gap-2">
 			<ModeToggle />
 			<UserDisplay />
+			<Avatar>
+				<AvatarImage src="https://github.com/conlonj25.png" />
+				<AvatarFallback>CN</AvatarFallback>
+			</Avatar>
 		</div>
 	</div>
 );

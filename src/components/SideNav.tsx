@@ -4,7 +4,10 @@ import UserDisplay from './UserDisplay';
 
 const SideNav = () => (
 	<div className="h-full flex flex-col gap-2 p-2">
-		<Link className={'bg-primary p-2 text-lg rounded-md'} href={'/'}>
+		<Link
+			className={'bg-primary p-2 text-lg rounded-md'}
+			href={'/questions'}
+		>
 			Questions
 		</Link>
 		<Link className={'bg-primary p-2 text-lg rounded-md'} href={'/'}>
