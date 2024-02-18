@@ -1,5 +1,5 @@
 import Pencil from '@/components/icons/Pencil';
-import Trash from '@/components/icons/trash';
+import Trash from '@/components/icons/Trash';
 import { Badge } from '@/components/ui/badge';
 
 const page = ({ params }: { params: { id: string } }) => {
