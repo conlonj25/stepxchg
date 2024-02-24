@@ -1,9 +1,9 @@
-import QuestionList from './QuestionList';
+import QuestionsList from './QuestionsList';
 
 const Page = () => {
 	return (
 		<div className="grow h-full p-5">
-			<QuestionList />
+			<QuestionsList />
 		</div>
 	);
 };
