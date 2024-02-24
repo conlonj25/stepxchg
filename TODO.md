@@ -1,2 +1,5 @@
--   [ ] add prisma
--   [ ] do crud operations with prisma
+-   [ ] Question
+    -   [ ] Create
+    -   [ ] Read
+    -   [ ] Update
+    -   [ ] Delete
